@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Расписание ГУАП</string>
+    <string name="open">Просмотр</string>
+    <!-- TASKS -->
+    <string name="actTasks">Задания</string>
+    <string name="actTasksNewTask">Новое задание</string>
+    <string name="actTasksWriteSomething">Напишите что нибудь!</string>
+    <string name="actTasksNoTasks">Заданий нет</string>
+    <string name="delete">Удалить</string>
+    <!-- Settings -->
+    <string name="download_groups">Загрузить новые группы</string>
+    <string name="downalod_teachers">Загрузить новых преподавателей</string>
+    <string name="write">Сохранить</string>
+    <!-- ShowDay -->
+    <string name="act_show_day_image_description">Тип пары</string>
+    <!-- ShowStudy -->
+    <string name="act_show_study_how_to_travel">Как добраться</string>
+    <string name="act_show_study_image_description">Карта аудиторий</string>
+    <!-- Chnager -->
+    <string name="act_changer_study_id">Номер пары</string>
+    <string name="menu_changer">Редактор расписания</string>
+    <string name="study_name">Название предмета</string>
+    <string name="study_room">Аудитория</string>
+
+</resources>

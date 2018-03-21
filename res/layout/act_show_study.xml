@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/studyImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="270dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="30dp" >
+
+        <TextView
+            android:id="@+id/studyView"
+            android:layout_width="fill_parent"
+            android:layout_height="200dp"
+            android:gravity="center_horizontal"
+            android:textSize="20sp" />
+    </ScrollView>
+
+    <Button
+        android:id="@+id/study_tasks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:onClick="onClick"
+        android:text="@string/actTasksNoTasks"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/showStudyGeoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/study_tasks"
+        android:layout_alignLeft="@+id/study_tasks"
+        android:layout_alignRight="@+id/study_tasks"
+        android:onClick="onClick"
+        android:text="@string/act_show_study_how_to_travel" />
+
+</RelativeLayout>

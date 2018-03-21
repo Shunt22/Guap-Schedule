@@ -1,0 +1,10 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="android:windowBackground">@drawable/main_background</item>
+    </style>
+
+    <style name="InfoTextStyle">
+        <item name="android:textSize">20sp</item>
+    </style>
+</resources>

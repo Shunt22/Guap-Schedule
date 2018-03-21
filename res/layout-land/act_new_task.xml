@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Spinner
+        android:id="@+id/tasksStudiesSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/tasksEditText" />
+
+    <EditText
+        android:id="@+id/tasksEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tasksStudiesSpinner"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toLeftOf="@+id/tasksTimeView"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/actTasksWriteSomething" />
+
+    <TextView
+        android:id="@+id/tasksTimeView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="157dp"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick" />
+
+    <TextView
+        android:id="@+id/tasksDateView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick" />
+
+    <Button
+        android:id="@+id/tasksSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tasksTimeView"
+        android:layout_marginTop="24dp"
+        android:layout_toLeftOf="@+id/tasksDateView"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/save_task"
+        android:onClick="onClick"
+        android:text="@string/write" />
+
+</RelativeLayout>

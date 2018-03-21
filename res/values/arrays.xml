@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="openDrawer">Открыть</string>
+    <string name="closeDrawer">Закрыть</string><string-array name="whereToGo">
+<item>ул. Большая Морская, д. 67</item>
+        <item>ул. Гастелло, д. 15</item>
+        <item>ул. Ленсовета, д. 14</item>
+        <item>Московский пр., д. 149B</item>
+        <item>Общежитие, пр. Маршала Жукова, д. 24</item>
+        <item>Общежитие, ул. Передовиков, д. 13</item>
+    </string-array>
+    <string-array name="weeks">
+        <item>Нечетная ▲</item>
+        <item>Четная▼</item>
+        <item>Обе</item>
+    </string-array>
+    <string-array name="days">
+        <item>Вне сетки расписания</item>
+        <item>Понедельник</item>
+        <item>Вторник</item>
+        <item>Среда</item>
+        <item>Четверг</item>
+        <item>Пятница</item>
+        <item>Суббота</item>
+    </string-array>
+    <string-array name="studyTypes">
+        <item>КП</item>
+        <item>КР</item>
+        <item>Л</item>
+        <item>ЛР</item>
+        <item>ПР</item>
+    </string-array>
+
+    <!-- Rooms coordinates -->
+    <integer-array name="_12_30">
+        <item>104</item>
+        <item>473</item>
+    </integer-array>
+    <integer-array name="_52_11">
+        <item>30</item>
+        <item>345</item>
+    </integer-array>
+    <integer-array name="_11_01а">
+        <item>449</item>
+        <item>475</item>
+    </integer-array>
+    <integer-array name="_11_01б">
+        <item>440</item>
+        <item>475</item>
+    </integer-array>
+    <integer-array name="_11_03">
+        <item>437</item>
+        <item>475</item>
+    </integer-array>
+
+</resources>

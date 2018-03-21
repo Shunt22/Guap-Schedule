@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Spinner
+        android:id="@+id/tasksStudiesSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <EditText
+        android:id="@+id/tasksEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tasksStudiesSpinner"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:gravity="top"
+        android:hint="@string/actTasksWriteSomething" />
+
+    <Button
+        android:id="@+id/tasksSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="45dp"
+        android:background="@android:color/transparent"
+        android:drawableTop="@drawable/save_task"
+        android:onClick="onClick"
+        android:text="@string/write" />
+
+    <TextView
+        android:id="@+id/tasksDateView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignTop="@+id/tasksTimeView"
+        android:layout_toRightOf="@+id/tasksSaveButton"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick" />
+
+    <TextView
+        android:id="@+id/tasksTimeView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/tasksSaveButton"
+        android:layout_marginBottom="20dp"
+        android:layout_toLeftOf="@+id/tasksSaveButton"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="onClick" />
+
+</RelativeLayout>

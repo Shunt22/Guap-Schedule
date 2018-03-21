@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <ListPreference
+        android:key="mainGroup"
+        android:summary="Выберите группу для расписания!"
+        android:title="Просмотр группы" />
+
+    <Preference
+        android:key="loginButtons"
+        android:layout="@layout/act_preferences_help" >
+    </Preference>
+
+    <SwitchPreference
+        android:key="track"
+        android:summaryOff="Отслеживать пары?"
+        android:summaryOn="Пары отслеживаются"
+        android:switchTextOff="Нет"
+        android:switchTextOn="Да" />
+    
+    <SwitchPreference
+        android:key="silent"
+        android:summaryOff="Включать беззвучный режим?"
+        android:summaryOn="Беззвучный режим"
+        android:switchTextOff="Нет"
+        android:switchTextOn="Да" />
+
+</PreferenceScreen>

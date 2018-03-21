@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <Spinner
+        android:id="@+id/changerDaySpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/changerSaveButton" />
+
+    <TextView
+        android:id="@+id/changerStudyNumberView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/changerWeekSpinner"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="18dp"
+        android:text="@string/act_changer_study_id" />
+
+    <Spinner
+        android:id="@+id/changerStudyIdSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/changerDaySpinner"
+        android:layout_below="@+id/changerWeekSpinner"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/changerStudyNumberView" />
+
+    <EditText
+        android:id="@+id/changerStudyRoomEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changerTypeSpinner"
+        android:ems="10"
+        android:hint="@string/study_room" >
+
+        <requestFocus />
+    </EditText>
+
+    <Spinner
+        android:id="@+id/changerWeekSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/changerSaveButton"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/changerDaySpinner" />
+
+    <Spinner
+        android:id="@+id/changerTypeSpinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/changerStudyIdSpinner"
+        android:layout_toRightOf="@+id/changerStudyIdSpinner" />
+
+    <EditText
+        android:id="@+id/changerStudyNameEdit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/changerStudyRoomEdit"
+        android:ems="10"
+        android:hint="@string/study_name" />
+
+    <Button
+        android:id="@+id/changerSaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changerStudyNameEdit"
+        android:layout_centerHorizontal="true"
+        android:onClick="onClick"
+        android:text="@string/write" />
+
+</RelativeLayout>
